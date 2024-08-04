@@ -9,8 +9,8 @@ import {
 } from "react-router-dom";
 import Mainlayout from "./layouts/Main";
 import Jobspage from "./pages/Jobspage";
-import JobDetails from "./pages/JobDetails";
 import NotFounded from "./pages/NotFounded";
+import JobPage from "./pages/JobPage";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -18,7 +18,7 @@ const router = createBrowserRouter(
       <Route path="/" element=<Mainlayout />>
         <Route index element=<Homepage /> />
         <Route path="/jobs" element=<Jobspage /> />
-        <Route path="/job/:id" element=<JobDetails /> />
+        <Route path="/job/:id" element=<JobPage /> />
         <Route path="*" element=<NotFounded /> />
       </Route>
     </>
